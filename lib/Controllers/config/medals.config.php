@@ -4,7 +4,24 @@ use lib\Controllers\MedalsController;
 use lib\Objects\GeoCache\GeoCache;
 use lib\Objects\OcConfig\OcConfig;
 use lib\Objects\Medals\MedalsContainer;
+/*
+Dolnośląskie PL51
+Kujawsko-Pomorskie PL61
+Lubelskie PL31
+Lubuskie PL43
+Mazowieckie PL12
 
+Opolskie PL52
+Podkarpackie PL32
+Podlaskie PL34
+Pomorskie PL63
+Śląskie PL22
+Świętokrzyskie PL33
+Warmińsko-Mazurskie PL62
+Wielkopolskie PL41
+Zachodniopomorskie PL42
+Łódzkie PL11
+*/
 /**
  * configuration table for medals
  */
