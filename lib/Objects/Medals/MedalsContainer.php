@@ -25,4 +25,9 @@ class MedalsContainer
     const OLDGEOCACHER = 13;
     const REGION_BIESZCZADY = 14;
     const CACHE_OWNER = 15;
+    const REGION_DOLNYSLASK = 16;
+    const REGION_KUJAWSKOPOMORSKIE = 17;
+    const REGION_LUBELSKIE = 18;
+    const REGION_LUBUSKIE = 19;
+    const REGION_MAZOWIECKIE = 20;
 }

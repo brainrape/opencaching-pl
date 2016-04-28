@@ -5,11 +5,6 @@ use lib\Objects\GeoCache\GeoCache;
 use lib\Objects\OcConfig\OcConfig;
 use lib\Objects\Medals\MedalsContainer;
 /*
-Dolnośląskie PL51
-Kujawsko-Pomorskie PL61
-Lubelskie PL31
-Lubuskie PL43
-Mazowieckie PL12
 
 Opolskie PL52
 Podkarpackie PL32
@@ -53,72 +48,51 @@ return array(
                 2 => array(
                     'levelName' => _('wooden'),
                     'cacheCount' => array(
-                        'found' => 10,
+                        'found' => 15,
                         'placed' => 0,
                     ),
                 ),
                 3 => array(
                     'levelName' => _('iron'),
                     'cacheCount' => array(
-                        'found' => 20,
+                        'found' => 33,
                         'placed' => 0,
                     ),
                 ),
                 4 => array(
                     'levelName' => _('beril'),
                     'cacheCount' => array(
-                        'found' => 40,
+                        'found' => 75,
                         'placed' => 1,
                     ),
                 ),
                 5 => array(
                     'levelName' => _('bronze'),
                     'cacheCount' => array(
-                        'found' => 80,
+                        'found' => 155,
                         'placed' => 2,
                     ),
                 ),
                 6 => array(
                     'levelName' => _('silver'),
                     'cacheCount' => array(
-                        'found' => 160,
+                        'found' => 333,
                         'placed' => 5,
                     ),
                 ),
                 7 => array(
                     'levelName' => _('gold'),
                     'cacheCount' => array(
-                        'found' => 320,
+                        'found' => 555,
                         'placed' => 10,
-                    ),
-                ),
-                8 => array(
-                    'levelName' => _('platinum'),
-                    'cacheCount' => array(
-                        'found' => 640,
-                        'placed' => 25,
-                    ),
-                ),
-                9 => array(
-                    'levelName' => _('perl'),
-                    'cacheCount' => array(
-                        'found' => 1000,
-                        'placed' => 40,
-                    ),
-                ),
-                10 => array(
-                    'levelName' => _('crystal'),
-                    'cacheCount' => array(
-                        'found' => 1300,
-                        'placed' => 64,
                     ),
                 ),
             ),
         ),
     ), /* end of medal */
-    MedalsContainer::REGION_KRAKOW => array(
-        'name' => _('cityKrakow'),
-        'description' => _('Medal for geocaching in Kraków'),
+    MedalsContainer::REGION_MALOPOLSKA => array(
+        'name' => _('regionMazowieckie'),
+        'description' => _('Medal for geocaching in Mazowieckie'),
         'type' => MedalsController::MEDAL_TYPE_REGION,
         'dateIntroduced' => '2006-04-09 10:30:00',
         'conditions' => array(
@@ -126,10 +100,10 @@ return array(
                 GeoCache::TYPE_TRADITIONAL,
                 GeoCache::TYPE_MULTICACHE,
                 GeoCache::TYPE_QUIZ,
+                GeoCache::TYPE_OTHERTYPE,
             ),
             'cacheLocation' => array(
-                'code3' => 'PL21',
-                'code4' => 'PL213',
+                'code3' => 'PL12',
             ),
             'minimumAltitude' => false,
             'cacheCountToAward' => array(
@@ -143,69 +117,328 @@ return array(
                 2 => array(
                     'levelName' => _('wooden'),
                     'cacheCount' => array(
-                        'found' => 2,
+                        'found' => 15,
                         'placed' => 0,
                     ),
                 ),
                 3 => array(
                     'levelName' => _('iron'),
                     'cacheCount' => array(
-                        'found' => 4,
+                        'found' => 33,
                         'placed' => 0,
                     ),
                 ),
                 4 => array(
                     'levelName' => _('beril'),
                     'cacheCount' => array(
-                        'found' => 8,
-                        'placed' => 0,
+                        'found' => 75,
+                        'placed' => 1,
                     ),
                 ),
                 5 => array(
                     'levelName' => _('bronze'),
                     'cacheCount' => array(
-                        'found' => 16,
-                        'placed' => 1,
+                        'found' => 155,
+                        'placed' => 2,
                     ),
                 ),
                 6 => array(
                     'levelName' => _('silver'),
                     'cacheCount' => array(
-                        'found' => 32,
-                        'placed' => 2,
+                        'found' => 333,
+                        'placed' => 5,
                     ),
                 ),
                 7 => array(
                     'levelName' => _('gold'),
                     'cacheCount' => array(
-                        'found' => 64,
-                        'placed' => 3,
-                    ),
-                ),
-                8 => array(
-                    'levelName' => _('platinum'),
-                    'cacheCount' => array(
-                        'found' => 128,
-                        'placed' => 5,
-                    ),
-                ),
-                9 => array(
-                    'levelName' => _('perl'),
-                    'cacheCount' => array(
-                        'found' => 256,
+                        'found' => 555,
                         'placed' => 10,
-                    ),
-                ),
-                10 => array(
-                    'levelName' => _('crystal'),
-                    'cacheCount' => array(
-                        'found' => 512,
-                        'placed' => 20,
                     ),
                 ),
             ),
         ),
     ), /* end of medal */
+    MedalsContainer::REGION_LUBUSKIE => array(
+        'name' => _('regionLubuskie'),
+        'description' => _('Medal for geocaching in Lubuskie'),
+        'type' => MedalsController::MEDAL_TYPE_REGION,
+        'dateIntroduced' => '2006-04-09 10:30:00',
+        'conditions' => array(
+            'cacheType' => array(
+                GeoCache::TYPE_TRADITIONAL,
+                GeoCache::TYPE_MULTICACHE,
+                GeoCache::TYPE_QUIZ,
+                GeoCache::TYPE_OTHERTYPE,
+            ),
+            'cacheLocation' => array(
+                'code3' => 'PL43',
+            ),
+            'minimumAltitude' => false,
+            'cacheCountToAward' => array(
+                1 => array(
+                    'levelName' => _('paper'),
+                    'cacheCount' => array(
+                        'found' => 1,
+                        'placed' => 0,
+                    ),
+                ),
+                2 => array(
+                    'levelName' => _('wooden'),
+                    'cacheCount' => array(
+                        'found' => 15,
+                        'placed' => 0,
+                    ),
+                ),
+                3 => array(
+                    'levelName' => _('iron'),
+                    'cacheCount' => array(
+                        'found' => 33,
+                        'placed' => 0,
+                    ),
+                ),
+                4 => array(
+                    'levelName' => _('beril'),
+                    'cacheCount' => array(
+                        'found' => 75,
+                        'placed' => 1,
+                    ),
+                ),
+                5 => array(
+                    'levelName' => _('bronze'),
+                    'cacheCount' => array(
+                        'found' => 155,
+                        'placed' => 2,
+                    ),
+                ),
+                6 => array(
+                    'levelName' => _('silver'),
+                    'cacheCount' => array(
+                        'found' => 333,
+                        'placed' => 5,
+                    ),
+                ),
+                7 => array(
+                    'levelName' => _('gold'),
+                    'cacheCount' => array(
+                        'found' => 555,
+                        'placed' => 10,
+                    ),
+                ),
+            ),
+        ),
+    ), /* end of medal */
+
+    MedalsContainer::REGION_DOLNYSLASK => array(
+        'name' => _('regionDolnySlask'),
+        'description' => _('Medal for geocaching in Dolny Slask'),
+        'type' => MedalsController::MEDAL_TYPE_REGION,
+        'dateIntroduced' => '2006-04-09 10:30:00',
+        'conditions' => array(
+            'cacheType' => array(
+                GeoCache::TYPE_TRADITIONAL,
+                GeoCache::TYPE_MULTICACHE,
+                GeoCache::TYPE_QUIZ,
+                GeoCache::TYPE_OTHERTYPE,
+            ),
+            'cacheLocation' => array(
+                'code3' => 'PL51',
+            ),
+            'minimumAltitude' => false,
+            'cacheCountToAward' => array(
+                1 => array(
+                    'levelName' => _('paper'),
+                    'cacheCount' => array(
+                        'found' => 1,
+                        'placed' => 0,
+                    ),
+                ),
+                2 => array(
+                    'levelName' => _('wooden'),
+                    'cacheCount' => array(
+                        'found' => 15,
+                        'placed' => 0,
+                    ),
+                ),
+                3 => array(
+                    'levelName' => _('iron'),
+                    'cacheCount' => array(
+                        'found' => 33,
+                        'placed' => 0,
+                    ),
+                ),
+                4 => array(
+                    'levelName' => _('beril'),
+                    'cacheCount' => array(
+                        'found' => 75,
+                        'placed' => 1,
+                    ),
+                ),
+                5 => array(
+                    'levelName' => _('bronze'),
+                    'cacheCount' => array(
+                        'found' => 155,
+                        'placed' => 2,
+                    ),
+                ),
+                6 => array(
+                    'levelName' => _('silver'),
+                    'cacheCount' => array(
+                        'found' => 333,
+                        'placed' => 5,
+                    ),
+                ),
+                7 => array(
+                    'levelName' => _('gold'),
+                    'cacheCount' => array(
+                        'found' => 555,
+                        'placed' => 10,
+                    ),
+                ),
+            ),
+        ),
+    ), /* end of medal */    
+
+ MedalsContainer::REGION_LUBELSKIE => array(
+        'name' => _('regionLubelskie'),
+        'description' => _('Medal for geocaching in Lubelskie'),
+        'type' => MedalsController::MEDAL_TYPE_REGION,
+        'dateIntroduced' => '2006-04-09 10:30:00',
+        'conditions' => array(
+            'cacheType' => array(
+                GeoCache::TYPE_TRADITIONAL,
+                GeoCache::TYPE_MULTICACHE,
+                GeoCache::TYPE_QUIZ,
+                GeoCache::TYPE_OTHERTYPE,
+            ),
+            'cacheLocation' => array(
+                'code3' => 'PL31',
+            ),
+            'minimumAltitude' => false,
+            'cacheCountToAward' => array(
+                1 => array(
+                    'levelName' => _('paper'),
+                    'cacheCount' => array(
+                        'found' => 1,
+                        'placed' => 0,
+                    ),
+                ),
+                2 => array(
+                    'levelName' => _('wooden'),
+                    'cacheCount' => array(
+                        'found' => 15,
+                        'placed' => 0,
+                    ),
+                ),
+                3 => array(
+                    'levelName' => _('iron'),
+                    'cacheCount' => array(
+                        'found' => 33,
+                        'placed' => 0,
+                    ),
+                ),
+                4 => array(
+                    'levelName' => _('beril'),
+                    'cacheCount' => array(
+                        'found' => 75,
+                        'placed' => 1,
+                    ),
+                ),
+                5 => array(
+                    'levelName' => _('bronze'),
+                    'cacheCount' => array(
+                        'found' => 155,
+                        'placed' => 2,
+                    ),
+                ),
+                6 => array(
+                    'levelName' => _('silver'),
+                    'cacheCount' => array(
+                        'found' => 333,
+                        'placed' => 5,
+                    ),
+                ),
+                7 => array(
+                    'levelName' => _('gold'),
+                    'cacheCount' => array(
+                        'found' => 555,
+                        'placed' => 10,
+                    ),
+                ),
+            ),
+        ),
+    ), /* end of medal */
+
+ MedalsContainer::REGION_KUJAWSKOPOMORSKIE => array(
+        'name' => _('regionKujawskoPomorskie'),
+        'description' => _('Medal for geocaching in Kujawsko Pomorskie'),
+        'type' => MedalsController::MEDAL_TYPE_REGION,
+        'dateIntroduced' => '2006-04-09 10:30:00',
+        'conditions' => array(
+            'cacheType' => array(
+                GeoCache::TYPE_TRADITIONAL,
+                GeoCache::TYPE_MULTICACHE,
+                GeoCache::TYPE_QUIZ,
+                GeoCache::TYPE_OTHERTYPE,
+            ),
+            'cacheLocation' => array(
+                'code3' => 'PL61',
+            ),
+            'minimumAltitude' => false,
+            'cacheCountToAward' => array(
+                1 => array(
+                    'levelName' => _('paper'),
+                    'cacheCount' => array(
+                        'found' => 1,
+                        'placed' => 0,
+                    ),
+                ),
+                2 => array(
+                    'levelName' => _('wooden'),
+                    'cacheCount' => array(
+                        'found' => 15,
+                        'placed' => 0,
+                    ),
+                ),
+                3 => array(
+                    'levelName' => _('iron'),
+                    'cacheCount' => array(
+                        'found' => 33,
+                        'placed' => 0,
+                    ),
+                ),
+                4 => array(
+                    'levelName' => _('beril'),
+                    'cacheCount' => array(
+                        'found' => 75,
+                        'placed' => 1,
+                    ),
+                ),
+                5 => array(
+                    'levelName' => _('bronze'),
+                    'cacheCount' => array(
+                        'found' => 155,
+                        'placed' => 2,
+                    ),
+                ),
+                6 => array(
+                    'levelName' => _('silver'),
+                    'cacheCount' => array(
+                        'found' => 333,
+                        'placed' => 5,
+                    ),
+                ),
+                7 => array(
+                    'levelName' => _('gold'),
+                    'cacheCount' => array(
+                        'found' => 555,
+                        'placed' => 10,
+                    ),
+                ),
+            ),
+        ),
+    ), /* end of medal */
+
     MedalsContainer::CACHE_TRADITIONAL => array(
         'name' => _('TraditionalCache'),
         'description' => _('Medal for traditional caches activity'),
