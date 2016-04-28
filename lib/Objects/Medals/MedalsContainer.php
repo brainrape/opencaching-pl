@@ -30,4 +30,6 @@ class MedalsContainer
     const REGION_LUBELSKIE = 18;
     const REGION_LUBUSKIE = 19;
     const REGION_MAZOWIECKIE = 20;
+    const REGION_OPOLSKIE = 21;
+    const REGION_PODKARPACKIE = 22;
 }

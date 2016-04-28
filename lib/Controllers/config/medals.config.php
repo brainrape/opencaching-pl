@@ -6,8 +6,6 @@ use lib\Objects\OcConfig\OcConfig;
 use lib\Objects\Medals\MedalsContainer;
 /*
 
-Opolskie PL52
-Podkarpackie PL32
 Podlaskie PL34
 Pomorskie PL63
 Śląskie PL22
@@ -35,6 +33,144 @@ return array(
             ),
             'cacheLocation' => array(
                 'code3' => 'PL21',
+            ),
+            'minimumAltitude' => false,
+            'cacheCountToAward' => array(
+                1 => array(
+                    'levelName' => _('paper'),
+                    'cacheCount' => array(
+                        'found' => 1,
+                        'placed' => 0,
+                    ),
+                ),
+                2 => array(
+                    'levelName' => _('wooden'),
+                    'cacheCount' => array(
+                        'found' => 15,
+                        'placed' => 0,
+                    ),
+                ),
+                3 => array(
+                    'levelName' => _('iron'),
+                    'cacheCount' => array(
+                        'found' => 33,
+                        'placed' => 0,
+                    ),
+                ),
+                4 => array(
+                    'levelName' => _('beril'),
+                    'cacheCount' => array(
+                        'found' => 75,
+                        'placed' => 1,
+                    ),
+                ),
+                5 => array(
+                    'levelName' => _('bronze'),
+                    'cacheCount' => array(
+                        'found' => 155,
+                        'placed' => 2,
+                    ),
+                ),
+                6 => array(
+                    'levelName' => _('silver'),
+                    'cacheCount' => array(
+                        'found' => 333,
+                        'placed' => 5,
+                    ),
+                ),
+                7 => array(
+                    'levelName' => _('gold'),
+                    'cacheCount' => array(
+                        'found' => 555,
+                        'placed' => 10,
+                    ),
+                ),
+            ),
+        ),
+    ), /* end of medal */
+    MedalsContainer::REGION_PODKARPACKIE => array(
+        'name' => _('regionPodkarpackie'),
+        'description' => _('Medal for geocaching in Podkarpackie'),
+        'type' => MedalsController::MEDAL_TYPE_REGION,
+        'dateIntroduced' => '2006-04-09 10:30:00',
+        'conditions' => array(
+            'cacheType' => array(
+                GeoCache::TYPE_TRADITIONAL,
+                GeoCache::TYPE_MULTICACHE,
+                GeoCache::TYPE_QUIZ,
+                GeoCache::TYPE_OTHERTYPE,
+            ),
+            'cacheLocation' => array(
+                'code3' => 'PL32',
+            ),
+            'minimumAltitude' => false,
+            'cacheCountToAward' => array(
+                1 => array(
+                    'levelName' => _('paper'),
+                    'cacheCount' => array(
+                        'found' => 1,
+                        'placed' => 0,
+                    ),
+                ),
+                2 => array(
+                    'levelName' => _('wooden'),
+                    'cacheCount' => array(
+                        'found' => 15,
+                        'placed' => 0,
+                    ),
+                ),
+                3 => array(
+                    'levelName' => _('iron'),
+                    'cacheCount' => array(
+                        'found' => 33,
+                        'placed' => 0,
+                    ),
+                ),
+                4 => array(
+                    'levelName' => _('beril'),
+                    'cacheCount' => array(
+                        'found' => 75,
+                        'placed' => 1,
+                    ),
+                ),
+                5 => array(
+                    'levelName' => _('bronze'),
+                    'cacheCount' => array(
+                        'found' => 155,
+                        'placed' => 2,
+                    ),
+                ),
+                6 => array(
+                    'levelName' => _('silver'),
+                    'cacheCount' => array(
+                        'found' => 333,
+                        'placed' => 5,
+                    ),
+                ),
+                7 => array(
+                    'levelName' => _('gold'),
+                    'cacheCount' => array(
+                        'found' => 555,
+                        'placed' => 10,
+                    ),
+                ),
+            ),
+        ),
+    ), /* end of medal */
+    MedalsContainer::REGION_OPOLSKIE => array(
+        'name' => _('regionOpolskie'),
+        'description' => _('Medal for geocaching in Opolskie'),
+        'type' => MedalsController::MEDAL_TYPE_REGION,
+        'dateIntroduced' => '2006-04-09 10:30:00',
+        'conditions' => array(
+            'cacheType' => array(
+                GeoCache::TYPE_TRADITIONAL,
+                GeoCache::TYPE_MULTICACHE,
+                GeoCache::TYPE_QUIZ,
+                GeoCache::TYPE_OTHERTYPE,
+            ),
+            'cacheLocation' => array(
+                'code3' => 'PL52',
             ),
             'minimumAltitude' => false,
             'cacheCountToAward' => array(
